@@ -1,0 +1,145 @@
+body {
+  background-color: rgb(146, 234, 234);
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  display: flex;
+  background-color: aliceblue;
+  width: 1500px;
+  height: 800px;
+  margin-top: 100px;
+  margin-left: 150px;
+  box-shadow: 0px 4px 21px -10px rgba(0,0,0,0.75);
+}
+
+.photo {
+  display: grid;
+  place-items: center;
+  background-image: url("images/nyanyaka.jpg");
+  background-position: center;
+  width: 620px;
+}
+
+.info {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  color: white;
+}
+
+#btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  width: 130px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(101, 182, 155);
+  opacity: 75%;
+  color: white;
+  transition: opacity ease 0.5s;
+}
+
+#btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  padding: 50px;
+}
+
+#years {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+  color: rgb(118, 118, 118);
+  mask-image: linear-gradient(90deg, #000 90%, transparent);
+}
+
+#years li {
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+#years .active {
+  color: black;
+}
+
+#years li:hover {
+  color: black;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-left: 50px;
+  font-size: 21px;
+}
+
+.date {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+  max-width: 100px;
+  align-items: center;
+}
+
+.day {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.month {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#article {
+  font-size: 35px;
+}
+
+.burgir {
+  height: 35px;
+  width: 35px;
+}
